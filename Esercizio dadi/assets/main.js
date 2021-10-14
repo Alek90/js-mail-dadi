@@ -24,8 +24,7 @@ gambleBtnElmt.addEventListener("click", function() {
 
     // genera numero random pc
     let pc_num = Math.floor(Math.random() * 5) + 1;
-    console.log(player_num, pc_num);
-
+    
 
     // Costituisco le condizioni che determinano il vincitore.
 
@@ -36,10 +35,10 @@ gambleBtnElmt.addEventListener("click", function() {
     }else {  // altrimenti pareggiano
         message = "Equal";
     };
-    console.log(message);
 
+
+    // Restituisco un messaggio con il risultato.
+
+    result.innerHTML = message;
 
 })
-
-
-// Restituisco un messaggio con il risultato.
