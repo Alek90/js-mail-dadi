@@ -5,8 +5,13 @@
 
 // Utilizzare un prompt per chiedere la email all'utente.
 
+// Mettere a schermo in un input la email.
+
 // Creare un array (?) contenente una serie di email "ammesse".
 
-// Confrontare la email dell'utente con quelle presenti nell'array (è stato accennato nella lezione).
+/*Creare una funzione legata ad un bottone per:
 
-// Mettere a schermo un messaggio relativo all'esito.
+    Confrontare la email dell'utente con quelle presenti nell'array (è stato accennato nella lezione).
+
+    Mettere a schermo un messaggio relativo all'esito.
+ */
