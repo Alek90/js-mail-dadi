@@ -9,6 +9,7 @@ const gambleBtnElmt = document.getElementById("gamble");
 const result = document.getElementById("result");
 let player_num;
 let pc_num;
+let message;
 
 
 
@@ -24,14 +25,21 @@ gambleBtnElmt.addEventListener("click", function() {
     // genera numero random pc
     let pc_num = Math.floor(Math.random() * 5) + 1;
     console.log(player_num, pc_num);
+
+
+    // Costituisco le condizioni che determinano il vincitore.
+
+    if (player_num > pc_num) { // se num-giocatore > num-pc = giocatore vince
+        message = "You win";
+    }else if (player_num < pc_num) { // se num-giocatore < num-pc = giocatore perde
+        message = "You lose";
+    }else {  // altrimenti pareggiano
+        message = "Equal";
+    };
+    console.log(message);
+
+
 })
 
-
-
-// Costituisco le condizioni che determinano il vincitore.
-
-/* se num-giocatore > num-pc = giocatore vince
-    se num-giocatore < num-pc = giocatore perde
-    altrimenti? pari! */
 
 // Restituisco un messaggio con il risultato.
