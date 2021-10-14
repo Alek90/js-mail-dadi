@@ -7,6 +7,10 @@ Stabilire il vincitore sulla base del risultato più alto. */
 
 const gambleBtnElmt = document.getElementById("gamble");
 const result = document.getElementById("result");
+let player_num;
+let pc_num;
+
+
 
 // Quando inizia l'azione?  Crea bottone per attivare.
 
@@ -15,9 +19,14 @@ const result = document.getElementById("result");
 gambleBtnElmt.addEventListener("click", function() {
 
     // genera numero random giocatore
+    let player_num = Math.floor(Math.random() * 5) + 1;
 
     // genera numero random pc
+    let pc_num = Math.floor(Math.random() * 5) + 1;
+    console.log(player_num, pc_num);
 })
+
+
 
 // Costituisco le condizioni che determinano il vincitore.
 
